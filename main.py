@@ -170,7 +170,6 @@ def facebook_callback(request: Request, code: str = None):
         "token_expires_at": expires_at.isoformat()
     })
 
-# ----------------- Hierarchical Facebook Ads Endpoints -----------------
 @app.get("/facebook/adaccounts/{facebook_user_id}")
 def get_ad_accounts(facebook_user_id: str):
     """Get all ad accounts for a Facebook user."""
