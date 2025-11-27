@@ -6,7 +6,6 @@ from dotenv import load_dotenv
 from supabase import create_client, Client
 from datetime import datetime, timedelta
 
-# ----------------- Load env and initialize -----------------
 load_dotenv()
 app = FastAPI()
 
