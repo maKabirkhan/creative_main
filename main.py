@@ -28,7 +28,6 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 REQUIRED_PERMISSIONS = {"ads_read", "ads_management", "business_management"}
 
-# ----------------- Utility Functions -----------------
 def validate_token(token: str):
     """Check that the token has all required Facebook permissions."""
     url = "https://graph.facebook.com/v19.0/me/permissions"
