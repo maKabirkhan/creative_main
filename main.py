@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 import os, requests
 from dotenv import load_dotenv
-from supabase import create_client, Client
+from supabase import create_client, Client 
 from datetime import datetime, timedelta
 
 
