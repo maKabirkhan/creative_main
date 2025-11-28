@@ -17,7 +17,6 @@ app.add_middleware(
     allow_headers=["*"],       
 )
 
-# Facebook and Supabase config
 FB_APP_ID = os.getenv("FB_APP_ID")
 FB_APP_SECRET = os.getenv("FB_APP_SECRET")
 REDIRECT_URI = os.getenv("REDIRECT_URI")
