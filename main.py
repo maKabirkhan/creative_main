@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 
 
 
-load_dotenv(
+load_dotenv()
 app = FastAPI()
 
 app.add_middleware(
