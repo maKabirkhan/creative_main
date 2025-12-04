@@ -18,7 +18,7 @@ class TimestampMixin:
     updated_at = Column(DateTime(timezone=True), server_default=func.now(), onupdate=func.now())
 
 
-class SubscriptionTier(enum.Enum):
+class SubscriptionTier(enum.Enm):
     FREE = "free"
     STARTER = "starter"
     PROFESSIONAL = "professional"
