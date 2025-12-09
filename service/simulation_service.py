@@ -84,9 +84,7 @@ class SimulationService:
                 self._process_single_asset(asset) 
                 for asset in creative_assets
             ]
-            
-            processed_assets = await asyncio.gather(*tasks, return_exceptions=True)
-            
+            processed_assets = await asyncio.gather(*tasks, return_exceptions=Falsee)  
             valid_assets = []
             for i, result in enumerate(processed_assets):
                 if isinstance(result, Exception):
