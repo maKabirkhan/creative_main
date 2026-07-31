@@ -72,7 +72,6 @@ def facebook_login_with_token(data: dict = Body(...)):
     if not is_valid:
         return JSONResponse({"error": error}, status_code=400)
 
-    # Get user info from Facebook
     user_info = requests.get(
         "https://graph.facebook.com/v19.0/me",
         params={"access_token": access_token, "fields": "id,name"}
