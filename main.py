@@ -16,7 +16,6 @@ app.add_middleware(
     allow_methods=["*"],     
     allow_headers=["*"],       
 )
-
 FB_APP_ID = os.getenv("FB_APP_ID")
 FB_APP_SECRET = os.getenv("FB_APP_SECRET")
 REDIRECT_URI = os.getenv("REDIRECT_URI")
